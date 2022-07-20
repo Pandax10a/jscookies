@@ -13,3 +13,10 @@ let user_1 = Cookies.get(`button_clicked`);
 if(user_1 !== undefined) {
     document.body.insertAdjacentHTML(`afterbegin`, `<h1> congratulation on baking a cookie</h1>`);
 }
+
+let button_event_2 = document.getElementById(`button2`);
+button_event_2.addEventListener(`click`, delete_this_button);
+
+function delete_this_button () {
+    Cookies.remove(`username`);
+}
