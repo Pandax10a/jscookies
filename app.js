@@ -20,3 +20,11 @@ button_event_2.addEventListener(`click`, delete_this_button);
 function delete_this_button () {
     Cookies.remove(`button_clicked`);
 }
+
+
+let button_event_3 = document.querySelector(`#button3`);
+button_event_3.addEventListener(`click`, update_other_button);
+
+function update_other_button () {
+    Cookies.set(`button_clicked`, `no`);
+}
