@@ -18,5 +18,5 @@ let button_event_2 = document.getElementById(`button2`);
 button_event_2.addEventListener(`click`, delete_this_button);
 
 function delete_this_button () {
-    Cookies.remove(`username`);
+    Cookies.remove(`button_clicked`);
 }
